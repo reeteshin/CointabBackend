@@ -1,6 +1,6 @@
 const express = require("express");
-const pincodes = require("./pincode");
-const Compneydata = require("./data")
+const pincodes = require("./Data/pincode");
+const Compneydata = require("./Data/data")
  
 const app = express();
 app.use(express.json());
