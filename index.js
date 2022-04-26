@@ -8,6 +8,7 @@ app.get('/',function(req,res){
     res.sendFile(__dirname+'/index.html');
     //__dirname : It will resolve to your project folder.
   });
+  
 app.get("/:TypeofDelivery/:pin/:WeightinKg", (req, res) => 
 {
     
