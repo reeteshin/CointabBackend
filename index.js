@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const express = require("express");
 const pincodes = require("./Data/pincode");
 const Compneydata = require("./Data/data")
@@ -8,7 +10,7 @@ app.get('/',function(req,res){
     res.sendFile(__dirname+'/index.html');
     //__dirname : It will resolve to your project folder.
   });
-  
+
 app.get("/:TypeofDelivery/:pin/:WeightinKg", (req, res) => 
 {
     
